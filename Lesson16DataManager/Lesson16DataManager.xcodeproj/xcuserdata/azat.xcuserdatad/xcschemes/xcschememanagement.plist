@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Lesson16.xcscheme</key>
+		<key>Lesson16DataManager.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,17 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>AA1F3D711C836A7D00393903</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AA1F3D961C837C7F00393903</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AA1F3DD31C837EDF00393903</key>
+		<key>AA1F3DF31C83812800393903</key>
 		<dict>
 			<key>primary</key>
 			<true/>

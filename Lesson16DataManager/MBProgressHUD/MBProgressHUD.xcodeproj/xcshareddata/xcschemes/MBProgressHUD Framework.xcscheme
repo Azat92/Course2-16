@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0720"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -11,14 +11,13 @@
             buildForRunning = "YES"
             buildForProfiling = "YES"
             buildForArchiving = "YES"
-            buildForAnalyzing = "YES"
-            hideIssues = "NO">
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AA1F3D711C836A7D00393903"
-               BuildableName = "Lesson16.app"
-               BlueprintName = "Lesson16"
-               ReferencedContainer = "container:Lesson16.xcodeproj">
+               BlueprintIdentifier = "1D104D791ACA36CC00973364"
+               BuildableName = "MBProgressHUD.framework"
+               BlueprintName = "MBProgressHUD Framework"
+               ReferencedContainer = "container:MBProgressHUD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA1F3D711C836A7D00393903"
-            BuildableName = "Lesson16.app"
-            BlueprintName = "Lesson16"
-            ReferencedContainer = "container:Lesson16.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -52,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA1F3D711C836A7D00393903"
-            BuildableName = "Lesson16.app"
-            BlueprintName = "Lesson16"
-            ReferencedContainer = "container:Lesson16.xcodeproj">
+            BlueprintIdentifier = "1D104D791ACA36CC00973364"
+            BuildableName = "MBProgressHUD.framework"
+            BlueprintName = "MBProgressHUD Framework"
+            ReferencedContainer = "container:MBProgressHUD.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -71,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AA1F3D711C836A7D00393903"
-            BuildableName = "Lesson16.app"
-            BlueprintName = "Lesson16"
-            ReferencedContainer = "container:Lesson16.xcodeproj">
+            BlueprintIdentifier = "1D104D791ACA36CC00973364"
+            BuildableName = "MBProgressHUD.framework"
+            BlueprintName = "MBProgressHUD Framework"
+            ReferencedContainer = "container:MBProgressHUD.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
