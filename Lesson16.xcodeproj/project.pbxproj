@@ -14,6 +14,7 @@
 		AA1F3D821C836A7D00393903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1F3D811C836A7D00393903 /* Assets.xcassets */; };
 		AA1F3D851C836A7D00393903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1F3D831C836A7D00393903 /* LaunchScreen.storyboard */; };
 		AA1F3E551C83972400393903 /* Lesson16DataManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1F3E4F1C8395B300393903 /* Lesson16DataManager.framework */; };
+		AA31E2161C8741D200CAF62A /* RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = AA31E2151C8741D200CAF62A /* RichText.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		AA1F3D841C836A7D00393903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA1F3D861C836A7D00393903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lesson16DataManager.xcodeproj; path = Lesson16DataManager/Lesson16DataManager.xcodeproj; sourceTree = "<group>"; };
+		AA31E2141C8741D200CAF62A /* RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichText.h; sourceTree = "<group>"; };
+		AA31E2151C8741D200CAF62A /* RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichText.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				AA1F3D831C836A7D00393903 /* LaunchScreen.storyboard */,
 				AA1F3D861C836A7D00393903 /* Info.plist */,
 				AA1F3D751C836A7D00393903 /* Supporting Files */,
+				AA31E2141C8741D200CAF62A /* RichText.h */,
+				AA31E2151C8741D200CAF62A /* RichText.m */,
 			);
 			path = Lesson16;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA31E2161C8741D200CAF62A /* RichText.m in Sources */,
 				AA1F3D7D1C836A7D00393903 /* ItemsTableViewController.m in Sources */,
 				AA1F3D7A1C836A7D00393903 /* AppDelegate.m in Sources */,
 				AA1F3D771C836A7D00393903 /* main.m in Sources */,
