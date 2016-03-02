@@ -14,14 +14,29 @@
 
 @property (nonatomic, copy) void (^updateCallback)(NSArray *items, NSError *error);
 @property (nonatomic) BOOL didAuth;
+@property (nonatomic, retain) NSString *archiveFilePath;
 
 @end
 
 @implementation DataManager
+@synthesize archiveFilePath = _archiveFilePath;
+
+- (NSString *)archiveFilePath {
+    if (!_archiveFilePath) {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        _archiveFilePath = [documentsDirectory stringByAppendingPathComponent:@"cache"];
+    }
+    return _archiveFilePath;
+}
 
 + (instancetype)managerWithUpdateCallback:(void (^)(NSArray *items, NSError *error))onUpdate {
     DataManager *manager = [[DataManager alloc] init];
     manager.updateCallback = onUpdate;
+    NSArray *cachDate = [NSKeyedUnarchiver unarchiveObjectWithFile:manager.archiveFilePath];
+    if (cachDate) {
+        manager.items = [cachDate copy];
+    }
     return manager;
 }
 
@@ -97,6 +112,7 @@
                 }
                 self.items = [someItems copy];
                 self.updateCallback(self.items, nil);
+                [NSKeyedArchiver archiveRootObject:self.items toFile:self.archiveFilePath];
                 [hud hideAnimated:YES];
             });
     } usingHUD:hud];

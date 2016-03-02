@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23C386DB1C87425500CA09A7 /* RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C386DA1C87425500CA09A7 /* RichText.m */; };
+		23C386DE1C87429E00CA09A7 /* MutableRichText.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C386DD1C87429E00CA09A7 /* MutableRichText.m */; };
+		23F8A7F71C8757DC00B6B562 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F8A7F61C8757DC00B6B562 /* ViewController.m */; };
 		AA1F3D771C836A7D00393903 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D761C836A7D00393903 /* main.m */; };
 		AA1F3D7A1C836A7D00393903 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D791C836A7D00393903 /* AppDelegate.m */; };
 		AA1F3D7D1C836A7D00393903 /* ItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D7C1C836A7D00393903 /* ItemsTableViewController.m */; };
@@ -14,7 +17,6 @@
 		AA1F3D821C836A7D00393903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1F3D811C836A7D00393903 /* Assets.xcassets */; };
 		AA1F3D851C836A7D00393903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1F3D831C836A7D00393903 /* LaunchScreen.storyboard */; };
 		AA1F3E551C83972400393903 /* Lesson16DataManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1F3E4F1C8395B300393903 /* Lesson16DataManager.framework */; };
-		AA31E2161C8741D200CAF62A /* RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = AA31E2151C8741D200CAF62A /* RichText.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		23C386D91C87425500CA09A7 /* RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichText.h; sourceTree = "<group>"; };
+		23C386DA1C87425500CA09A7 /* RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichText.m; sourceTree = "<group>"; };
+		23C386DC1C87429E00CA09A7 /* MutableRichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableRichText.h; sourceTree = "<group>"; };
+		23C386DD1C87429E00CA09A7 /* MutableRichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableRichText.m; sourceTree = "<group>"; };
+		23F8A7F51C8757DC00B6B562 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		23F8A7F61C8757DC00B6B562 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AA1F3D721C836A7D00393903 /* Lesson16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1F3D761C836A7D00393903 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA1F3D781C836A7D00393903 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,8 +67,6 @@
 		AA1F3D841C836A7D00393903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA1F3D861C836A7D00393903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lesson16DataManager.xcodeproj; path = Lesson16DataManager/Lesson16DataManager.xcodeproj; sourceTree = "<group>"; };
-		AA31E2141C8741D200CAF62A /* RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichText.h; sourceTree = "<group>"; };
-		AA31E2151C8741D200CAF62A /* RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichText.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +118,12 @@
 				AA1F3D831C836A7D00393903 /* LaunchScreen.storyboard */,
 				AA1F3D861C836A7D00393903 /* Info.plist */,
 				AA1F3D751C836A7D00393903 /* Supporting Files */,
-				AA31E2141C8741D200CAF62A /* RichText.h */,
-				AA31E2151C8741D200CAF62A /* RichText.m */,
+				23C386D91C87425500CA09A7 /* RichText.h */,
+				23C386DA1C87425500CA09A7 /* RichText.m */,
+				23C386DC1C87429E00CA09A7 /* MutableRichText.h */,
+				23C386DD1C87429E00CA09A7 /* MutableRichText.m */,
+				23F8A7F51C8757DC00B6B562 /* ViewController.h */,
+				23F8A7F61C8757DC00B6B562 /* ViewController.m */,
 			);
 			path = Lesson16;
 			sourceTree = "<group>";
@@ -222,7 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA31E2161C8741D200CAF62A /* RichText.m in Sources */,
+				23F8A7F71C8757DC00B6B562 /* ViewController.m in Sources */,
+				23C386DE1C87429E00CA09A7 /* MutableRichText.m in Sources */,
+				23C386DB1C87425500CA09A7 /* RichText.m in Sources */,
 				AA1F3D7D1C836A7D00393903 /* ItemsTableViewController.m in Sources */,
 				AA1F3D7A1C836A7D00393903 /* AppDelegate.m in Sources */,
 				AA1F3D771C836A7D00393903 /* main.m in Sources */,
@@ -353,6 +365,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Lesson16DataManager.framework/Headers";
 				INFOPLIST_FILE = Lesson16/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.azatalmeev.Lesson16;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,6 +382,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Lesson16DataManager.framework/Headers";
 				INFOPLIST_FILE = Lesson16/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.azatalmeev.Lesson16;
 				PRODUCT_NAME = "$(TARGET_NAME)";
