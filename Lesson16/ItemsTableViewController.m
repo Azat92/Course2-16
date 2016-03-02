@@ -8,6 +8,7 @@
 
 #import "ItemsTableViewController.h"
 #import <Lesson16DataManager/Lesson16DataManager.h>
+#import "RichText.h"
 
 @interface ItemsTableViewController () <DataManagerDelegate>
 
@@ -52,6 +53,7 @@
     NSDictionary *object = self.manager.items[indexPath.row];
     cell.textLabel.text = object[@"name"];
     cell.detailTextLabel.text = object[@"description"];
+    
     return cell;
 }
 
