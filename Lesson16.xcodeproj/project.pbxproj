@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0533C1AC1C91C4CA00B16311 /* MutableRichText.m in Sources */ = {isa = PBXBuildFile; fileRef = 0533C1AB1C91C4CA00B16311 /* MutableRichText.m */; };
 		AA1F3D771C836A7D00393903 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D761C836A7D00393903 /* main.m */; };
 		AA1F3D7A1C836A7D00393903 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D791C836A7D00393903 /* AppDelegate.m */; };
 		AA1F3D7D1C836A7D00393903 /* ItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D7C1C836A7D00393903 /* ItemsTableViewController.m */; };
@@ -48,6 +49,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0533C1AA1C91C4CA00B16311 /* MutableRichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableRichText.h; sourceTree = "<group>"; };
+		0533C1AB1C91C4CA00B16311 /* MutableRichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableRichText.m; sourceTree = "<group>"; };
 		AA1F3D721C836A7D00393903 /* Lesson16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1F3D761C836A7D00393903 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA1F3D781C836A7D00393903 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				AA1F3D751C836A7D00393903 /* Supporting Files */,
 				AA31E2141C8741D200CAF62A /* RichText.h */,
 				AA31E2151C8741D200CAF62A /* RichText.m */,
+				0533C1AA1C91C4CA00B16311 /* MutableRichText.h */,
+				0533C1AB1C91C4CA00B16311 /* MutableRichText.m */,
 			);
 			path = Lesson16;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0533C1AC1C91C4CA00B16311 /* MutableRichText.m in Sources */,
 				AA31E2161C8741D200CAF62A /* RichText.m in Sources */,
 				AA1F3D7D1C836A7D00393903 /* ItemsTableViewController.m in Sources */,
 				AA1F3D7A1C836A7D00393903 /* AppDelegate.m in Sources */,
