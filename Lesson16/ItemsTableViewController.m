@@ -8,7 +8,6 @@
 
 #import "ItemsTableViewController.h"
 #import <Lesson16DataManager/Lesson16DataManager.h>
-#import "RichText.h"
 
 @interface ItemsTableViewController () <DataManagerDelegate>
 

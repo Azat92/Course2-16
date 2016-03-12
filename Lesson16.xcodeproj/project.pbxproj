@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23C386DB1C87425500CA09A7 /* RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C386DA1C87425500CA09A7 /* RichText.m */; };
-		23C386DE1C87429E00CA09A7 /* MutableRichText.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C386DD1C87429E00CA09A7 /* MutableRichText.m */; };
+		23912A951C9411B100D2EC9D /* StringHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23912A921C9411AA00D2EC9D /* StringHelper.framework */; };
 		23F8A7F71C8757DC00B6B562 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F8A7F61C8757DC00B6B562 /* ViewController.m */; };
 		AA1F3D771C836A7D00393903 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D761C836A7D00393903 /* main.m */; };
 		AA1F3D7A1C836A7D00393903 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D791C836A7D00393903 /* AppDelegate.m */; };
@@ -20,6 +19,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		23912A911C9411AA00D2EC9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23912A8C1C9411A900D2EC9D /* StringHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 23FB2C351C93672D0007F5B0;
+			remoteInfo = StringHelper;
+		};
+		23912A931C9411AA00D2EC9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23912A8C1C9411A900D2EC9D /* StringHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 23FB2C3F1C93672D0007F5B0;
+			remoteInfo = StringHelperTests;
+		};
 		AA1F3E4E1C8395B300393903 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */;
@@ -50,10 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		23C386D91C87425500CA09A7 /* RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichText.h; sourceTree = "<group>"; };
-		23C386DA1C87425500CA09A7 /* RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichText.m; sourceTree = "<group>"; };
-		23C386DC1C87429E00CA09A7 /* MutableRichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutableRichText.h; sourceTree = "<group>"; };
-		23C386DD1C87429E00CA09A7 /* MutableRichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutableRichText.m; sourceTree = "<group>"; };
+		23912A8C1C9411A900D2EC9D /* StringHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StringHelper.xcodeproj; path = ../../Documents/XcodeProjects/StringHelper/StringHelper.xcodeproj; sourceTree = "<group>"; };
 		23F8A7F51C8757DC00B6B562 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		23F8A7F61C8757DC00B6B562 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AA1F3D721C836A7D00393903 /* Lesson16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson16.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23912A951C9411B100D2EC9D /* StringHelper.framework in Frameworks */,
 				AA1F3E551C83972400393903 /* Lesson16DataManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,9 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23912A8D1C9411A900D2EC9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23912A921C9411AA00D2EC9D /* StringHelper.framework */,
+				23912A941C9411AA00D2EC9D /* StringHelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		84E4E976104CAF561FA946E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23912A8C1C9411A900D2EC9D /* StringHelper.xcodeproj */,
 				AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */,
 			);
 			name = Frameworks;
@@ -118,10 +139,6 @@
 				AA1F3D831C836A7D00393903 /* LaunchScreen.storyboard */,
 				AA1F3D861C836A7D00393903 /* Info.plist */,
 				AA1F3D751C836A7D00393903 /* Supporting Files */,
-				23C386D91C87425500CA09A7 /* RichText.h */,
-				23C386DA1C87425500CA09A7 /* RichText.m */,
-				23C386DC1C87429E00CA09A7 /* MutableRichText.h */,
-				23C386DD1C87429E00CA09A7 /* MutableRichText.m */,
 				23F8A7F51C8757DC00B6B562 /* ViewController.h */,
 				23F8A7F61C8757DC00B6B562 /* ViewController.m */,
 			);
@@ -196,6 +213,10 @@
 					ProductGroup = AA1F3E4A1C8395B300393903 /* Products */;
 					ProjectRef = AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */;
 				},
+				{
+					ProductGroup = 23912A8D1C9411A900D2EC9D /* Products */;
+					ProjectRef = 23912A8C1C9411A900D2EC9D /* StringHelper.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -205,6 +226,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		23912A921C9411AA00D2EC9D /* StringHelper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = StringHelper.framework;
+			remoteRef = 23912A911C9411AA00D2EC9D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		23912A941C9411AA00D2EC9D /* StringHelperTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = StringHelperTests.xctest;
+			remoteRef = 23912A931C9411AA00D2EC9D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		AA1F3E4F1C8395B300393903 /* Lesson16DataManager.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -233,8 +268,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				23F8A7F71C8757DC00B6B562 /* ViewController.m in Sources */,
-				23C386DE1C87429E00CA09A7 /* MutableRichText.m in Sources */,
-				23C386DB1C87425500CA09A7 /* RichText.m in Sources */,
 				AA1F3D7D1C836A7D00393903 /* ItemsTableViewController.m in Sources */,
 				AA1F3D7A1C836A7D00393903 /* AppDelegate.m in Sources */,
 				AA1F3D771C836A7D00393903 /* main.m in Sources */,
@@ -365,7 +398,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Lesson16DataManager.framework/Headers";
 				INFOPLIST_FILE = Lesson16/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.azatalmeev.Lesson16;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,7 +415,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Lesson16DataManager.framework/Headers";
 				INFOPLIST_FILE = Lesson16/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.azatalmeev.Lesson16;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "RichText.h"
-#import "MutableRichText.h"
+#import <StringHelper/RichText.h>
+#import <StringHelper/MutableRichText.h>
 
 @interface ViewController ()
 
@@ -20,15 +20,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    RichText *text = [RichText textWithString:@"text"];
-    text.bgcolor = [UIColor redColor];
-    text.fgcolor = [UIColor greenColor];
-    text.font = [UIFont systemFontOfSize:100];
-    text.underline = NSUnderlineStyleDouble;
-    text = [text textAtRange:NSMakeRange(0, 2)];
-    MutableRichText *mutableText = [MutableRichText mutableTextWithText:@"123"];
-    [mutableText replaceWithText:text atRange:NSMakeRange(1, 2)];
-    self.label.attributedText = mutableText.attributedString;
+    RichText *richText = [RichText textWithString:@"richText"];
+    richText.bgcolor = [UIColor redColor];
+    richText.fgcolor = [UIColor greenColor];
+    richText.font = [UIFont systemFontOfSize:50];
+    richText.underline = NSUnderlineStyleDouble;
+    MutableRichText *mutableRichText = [MutableRichText textWithString:@"mutableRichText"];
+    [mutableRichText appendText:richText];
+    self.label.attributedText = mutableRichText.attributedString;
 }
 
 @end
