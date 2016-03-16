@@ -13,6 +13,7 @@
 + (instancetype)textWithString:(NSString *)string;
 - (RichText *)textAtRange:(NSRange)range;
 
+@property (nonatomic, strong) NSMutableAttributedString *atrString;
 @property (nonatomic, strong) UIColor *fgcolor;
 @property (nonatomic, strong) UIColor *bgcolor;
 @property (nonatomic, strong) UIFont *font;

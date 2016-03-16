@@ -24,8 +24,10 @@
         _manager = [DataManager managerWithUpdateCallback:^(NSArray *items, NSError *error) {
             if (error)
                 NSLog(@"%@", error);
-            else
+            else{
                 [self_.tableView reloadData];
+            }
+            
         }];
         _manager.delegate = self;
     }
@@ -43,13 +45,13 @@
 
 #pragma mark - Table View Delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.manager.items.count;
+    return self.manager.cache.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"itemCellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    NSDictionary *object = self.manager.items[indexPath.row];
+    NSDictionary *object = self.manager.cache[indexPath.row];
     cell.textLabel.text = object[@"name"];
     cell.detailTextLabel.text = object[@"description"];
     return cell;

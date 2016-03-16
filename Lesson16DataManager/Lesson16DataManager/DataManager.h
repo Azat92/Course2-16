@@ -20,7 +20,10 @@
 @interface DataManager : NSObject
 
 @property (nonatomic, weak) id <DataManagerDelegate> delegate;
-@property (nonatomic, strong) NSArray *items;
+@property (nonatomic, strong) NSMutableArray *cache;
+@property (nonatomic) NSArray *paths;
+@property (nonatomic) NSString *cachesDirectory;
+
 
 + (instancetype)managerWithUpdateCallback:(void (^)(NSArray *items, NSError *error))onUpdate;
 - (void)loadData;
