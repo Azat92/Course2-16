@@ -15,15 +15,28 @@
 @property (nonatomic, copy) void (^updateCallback)(NSArray *items, NSError *error);
 @property (nonatomic) BOOL didAuth;
 
+
+
 @end
 
 @implementation DataManager
 
+
 + (instancetype)managerWithUpdateCallback:(void (^)(NSArray *items, NSError *error))onUpdate {
     DataManager *manager = [[DataManager alloc] init];
+  
+    if (!manager.cachesDirectory){
+        
+        manager.paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+        manager.cachesDirectory = [manager.paths objectAtIndex:0];
+        manager.cachesDirectory = [manager.cachesDirectory stringByAppendingPathComponent:@"MyAppCache"];
+   
+    }
     manager.updateCallback = onUpdate;
+    manager.cache = [NSKeyedUnarchiver unarchiveObjectWithFile:manager.cachesDirectory];
     return manager;
 }
+
 
 - (void)planNextAuth {
     [self performSelector:@selector(setNoAuth) withObject:nil afterDelay:1 * 60];
@@ -94,9 +107,12 @@
                     object[@"name"] = [NSString stringWithFormat:@"Object name %@", @(i)];
                     object[@"description"] = [NSString stringWithFormat:@"Object updated %@", [NSDate new]];
                     [someItems addObject:object];
+                  
+                    
                 }
-                self.items = [someItems copy];
-                self.updateCallback(self.items, nil);
+                self.cache = [someItems copy];
+                [NSKeyedArchiver archiveRootObject:self.cache toFile:self.cachesDirectory];
+                self.updateCallback(self.cache, nil);
                 [hud hideAnimated:YES];
             });
     } usingHUD:hud];

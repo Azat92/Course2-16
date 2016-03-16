@@ -14,7 +14,7 @@
 		AA1F3D821C836A7D00393903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1F3D811C836A7D00393903 /* Assets.xcassets */; };
 		AA1F3D851C836A7D00393903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1F3D831C836A7D00393903 /* LaunchScreen.storyboard */; };
 		AA1F3E551C83972400393903 /* Lesson16DataManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1F3E4F1C8395B300393903 /* Lesson16DataManager.framework */; };
-		AA31E2161C8741D200CAF62A /* RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = AA31E2151C8741D200CAF62A /* RichText.m */; };
+		E5E9411B1C96DB37000427B4 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E9411A1C96DB37000427B4 /* MyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +31,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = AA1F3DF31C83812800393903;
 			remoteInfo = Lesson16DataManager;
+		};
+		E5BB1DD81C99A656006F4232 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5BB1DD31C99A656006F4232 /* RichTextLibr.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E5BB1D9C1C999C19006F4232;
+			remoteInfo = RichTextLibr;
+		};
+		E5BB1DDA1C99A656006F4232 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5BB1DD31C99A656006F4232 /* RichTextLibr.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E5BB1DA61C999C19006F4232;
+			remoteInfo = RichTextLibrTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -59,8 +73,9 @@
 		AA1F3D841C836A7D00393903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA1F3D861C836A7D00393903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lesson16DataManager.xcodeproj; path = Lesson16DataManager/Lesson16DataManager.xcodeproj; sourceTree = "<group>"; };
-		AA31E2141C8741D200CAF62A /* RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichText.h; sourceTree = "<group>"; };
-		AA31E2151C8741D200CAF62A /* RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichText.m; sourceTree = "<group>"; };
+		E5BB1DD31C99A656006F4232 /* RichTextLibr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RichTextLibr.xcodeproj; path = RichTextLibr/RichTextLibr.xcodeproj; sourceTree = "<group>"; };
+		E5E941191C96DB37000427B4 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		E5E9411A1C96DB37000427B4 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +93,7 @@
 		84E4E976104CAF561FA946E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5BB1DD31C99A656006F4232 /* RichTextLibr.xcodeproj */,
 				AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */,
 			);
 			name = Frameworks;
@@ -112,8 +128,6 @@
 				AA1F3D831C836A7D00393903 /* LaunchScreen.storyboard */,
 				AA1F3D861C836A7D00393903 /* Info.plist */,
 				AA1F3D751C836A7D00393903 /* Supporting Files */,
-				AA31E2141C8741D200CAF62A /* RichText.h */,
-				AA31E2151C8741D200CAF62A /* RichText.m */,
 			);
 			path = Lesson16;
 			sourceTree = "<group>";
@@ -122,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				AA1F3D761C836A7D00393903 /* main.m */,
+				E5E941191C96DB37000427B4 /* MyViewController.h */,
+				E5E9411A1C96DB37000427B4 /* MyViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -130,6 +146,15 @@
 			isa = PBXGroup;
 			children = (
 				AA1F3E4F1C8395B300393903 /* Lesson16DataManager.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5BB1DD41C99A656006F4232 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5BB1DD91C99A656006F4232 /* RichTextLibr.framework */,
+				E5BB1DDB1C99A656006F4232 /* RichTextLibrTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +211,10 @@
 					ProductGroup = AA1F3E4A1C8395B300393903 /* Products */;
 					ProjectRef = AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */;
 				},
+				{
+					ProductGroup = E5BB1DD41C99A656006F4232 /* Products */;
+					ProjectRef = E5BB1DD31C99A656006F4232 /* RichTextLibr.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -200,6 +229,20 @@
 			fileType = wrapper.framework;
 			path = Lesson16DataManager.framework;
 			remoteRef = AA1F3E4E1C8395B300393903 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E5BB1DD91C99A656006F4232 /* RichTextLibr.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RichTextLibr.framework;
+			remoteRef = E5BB1DD81C99A656006F4232 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E5BB1DDB1C99A656006F4232 /* RichTextLibrTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RichTextLibrTests.xctest;
+			remoteRef = E5BB1DDA1C99A656006F4232 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -222,10 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA31E2161C8741D200CAF62A /* RichText.m in Sources */,
 				AA1F3D7D1C836A7D00393903 /* ItemsTableViewController.m in Sources */,
 				AA1F3D7A1C836A7D00393903 /* AppDelegate.m in Sources */,
 				AA1F3D771C836A7D00393903 /* main.m in Sources */,
+				E5E9411B1C96DB37000427B4 /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +396,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Lesson16DataManager.framework/Headers";
 				INFOPLIST_FILE = Lesson16/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.azatalmeev.Lesson16;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,6 +413,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Lesson16DataManager.framework/Headers";
 				INFOPLIST_FILE = Lesson16/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.azatalmeev.Lesson16;
 				PRODUCT_NAME = "$(TARGET_NAME)";
