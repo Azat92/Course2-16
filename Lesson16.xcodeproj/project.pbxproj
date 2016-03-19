@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23912A951C9411B100D2EC9D /* StringHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23912A921C9411AA00D2EC9D /* StringHelper.framework */; };
+		237610AB1C9D358D0065F1C9 /* StringHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237610A01C9D35370065F1C9 /* StringHelper.framework */; };
 		23F8A7F71C8757DC00B6B562 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F8A7F61C8757DC00B6B562 /* ViewController.m */; };
 		AA1F3D771C836A7D00393903 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D761C836A7D00393903 /* main.m */; };
 		AA1F3D7A1C836A7D00393903 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D791C836A7D00393903 /* AppDelegate.m */; };
@@ -19,16 +19,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		23912A911C9411AA00D2EC9D /* PBXContainerItemProxy */ = {
+		2376109F1C9D35370065F1C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 23912A8C1C9411A900D2EC9D /* StringHelper.xcodeproj */;
+			containerPortal = 2376109A1C9D35370065F1C9 /* StringHelper.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 23FB2C351C93672D0007F5B0;
 			remoteInfo = StringHelper;
 		};
-		23912A931C9411AA00D2EC9D /* PBXContainerItemProxy */ = {
+		237610A11C9D35370065F1C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 23912A8C1C9411A900D2EC9D /* StringHelper.xcodeproj */;
+			containerPortal = 2376109A1C9D35370065F1C9 /* StringHelper.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 23FB2C3F1C93672D0007F5B0;
 			remoteInfo = StringHelperTests;
@@ -63,7 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		23912A8C1C9411A900D2EC9D /* StringHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StringHelper.xcodeproj; path = ../../Documents/XcodeProjects/StringHelper/StringHelper.xcodeproj; sourceTree = "<group>"; };
+		2376109A1C9D35370065F1C9 /* StringHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StringHelper.xcodeproj; path = StringHelper/StringHelper.xcodeproj; sourceTree = "<group>"; };
 		23F8A7F51C8757DC00B6B562 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		23F8A7F61C8757DC00B6B562 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AA1F3D721C836A7D00393903 /* Lesson16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson16.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23912A951C9411B100D2EC9D /* StringHelper.framework in Frameworks */,
+				237610AB1C9D358D0065F1C9 /* StringHelper.framework in Frameworks */,
 				AA1F3E551C83972400393903 /* Lesson16DataManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,11 +92,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23912A8D1C9411A900D2EC9D /* Products */ = {
+		2376109B1C9D35370065F1C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				23912A921C9411AA00D2EC9D /* StringHelper.framework */,
-				23912A941C9411AA00D2EC9D /* StringHelperTests.xctest */,
+				237610A01C9D35370065F1C9 /* StringHelper.framework */,
+				237610A21C9D35370065F1C9 /* StringHelperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 		84E4E976104CAF561FA946E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23912A8C1C9411A900D2EC9D /* StringHelper.xcodeproj */,
+				2376109A1C9D35370065F1C9 /* StringHelper.xcodeproj */,
 				AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */,
 			);
 			name = Frameworks;
@@ -214,8 +214,8 @@
 					ProjectRef = AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */;
 				},
 				{
-					ProductGroup = 23912A8D1C9411A900D2EC9D /* Products */;
-					ProjectRef = 23912A8C1C9411A900D2EC9D /* StringHelper.xcodeproj */;
+					ProductGroup = 2376109B1C9D35370065F1C9 /* Products */;
+					ProjectRef = 2376109A1C9D35370065F1C9 /* StringHelper.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -226,18 +226,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		23912A921C9411AA00D2EC9D /* StringHelper.framework */ = {
+		237610A01C9D35370065F1C9 /* StringHelper.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = StringHelper.framework;
-			remoteRef = 23912A911C9411AA00D2EC9D /* PBXContainerItemProxy */;
+			remoteRef = 2376109F1C9D35370065F1C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		23912A941C9411AA00D2EC9D /* StringHelperTests.xctest */ = {
+		237610A21C9D35370065F1C9 /* StringHelperTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = StringHelperTests.xctest;
-			remoteRef = 23912A931C9411AA00D2EC9D /* PBXContainerItemProxy */;
+			remoteRef = 237610A11C9D35370065F1C9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		AA1F3E4F1C8395B300393903 /* Lesson16DataManager.framework */ = {
