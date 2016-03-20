@@ -11,7 +11,6 @@
 
 @interface MutableRichText : RichText
 
-- (id) initWithString:(NSString *)string;
 - (void)appendText:(RichText *)text;
 - (void)prependText:(RichText *)text;
 - (void)insertText:(RichText *)text atIndex:(NSInteger)index;

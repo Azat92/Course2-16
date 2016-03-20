@@ -11,16 +11,16 @@
 @interface MutableRichText()
 
 
-@property NSMutableAttributedString *atributedString;
+@property NSMutableAttributedString *mutableAtributedString;
 
 @end
 
 @implementation MutableRichText
 
 - (id)initWithString:(NSString *)string {
-    self = [super init];
+    self = [super initWithString:string];
     if (self) {
-        self.atributedString = [[NSMutableAttributedString alloc]initWithString:string];
+        self.mutableAtributedString = [[NSMutableAttributedString alloc]initWithString:string];
     }
     return self;
 }
@@ -30,19 +30,21 @@
 }
 
 - (void)appendText:(RichText *)text {
-    [self.atributedString appendAttributedString:[text attributedString]];
+    [self.mutableAtributedString appendAttributedString:[text attributedString]];
 }
 - (void)prependText:(RichText *)text {
-    [self.atributedString insertAttributedString:[text attributedString] atIndex:0];
+    [self.mutableAtributedString insertAttributedString:[text attributedString] atIndex:0];
 }
 - (void)insertText:(RichText *)text atIndex:(NSInteger)index {
-    [self.atributedString insertAttributedString:[text attributedString] atIndex:index];
+    [self.mutableAtributedString insertAttributedString:[text attributedString] atIndex:index];
 }
 - (void)removeTextAtRange:(NSRange)range {
-    [self.atributedString deleteCharactersInRange:range];
+    [self.mutableAtributedString deleteCharactersInRange:range];
 }
 - (void)replaceWithText:(RichText *)text atRange:(NSRange)range {
-    [self.atributedString replaceCharactersInRange:range withAttributedString:[text attributedString]];
+    [self.mutableAtributedString replaceCharactersInRange:range withAttributedString:[text attributedString]];
 }
+
+
 
 @end
