@@ -8,6 +8,7 @@
 
 #import "ItemsTableViewController.h"
 #import <Lesson16DataManager/Lesson16DataManager.h>
+#import "RichText.h"
 
 @interface ItemsTableViewController () <DataManagerDelegate>
 
@@ -34,6 +35,10 @@
 
 - (IBAction)refreshButtonDidClick:(id)sender {
     [self.manager loadData];
+    NSAttributedString *str = [[NSAttributedString alloc] initWithString:@"das"];
+    [str mutableCopy];
+    
+    
 }
 
 #pragma mark - Data Manager Delegate

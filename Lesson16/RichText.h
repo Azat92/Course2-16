@@ -10,22 +10,14 @@
 @import UIKit;
 
 @interface RichText : NSObject //KVO compatible
-+ (instancetype)textWithString:(NSString *)string;
+- (id)initWithString:(NSString *)string;
 - (RichText *)textAtRange:(NSRange)range;
-
 @property (nonatomic, strong) UIColor *fgcolor;
 @property (nonatomic, strong) UIColor *bgcolor;
 @property (nonatomic, strong) UIFont *font;
 @property (nonatomic) NSUnderlineStyle underline;
+@property (nonatomic) NSInteger length;
 
 @property (nonatomic, readonly) NSString *pureString;
 @property (nonatomic, readonly) NSAttributedString *attributedString;
-@end
-
-@interface MutableRichText : RichText
-- (void)appendText:(RichText *)text;
-- (void)prependText:(RichText *)text;
-- (void)insertText:(RichText *)text atIndex:(NSInteger)index;
-- (void)removeTextAtRange:(NSRange)range;
-- (void)replaceWithText:(RichText *)text atRange:(NSRange)range;
 @end
