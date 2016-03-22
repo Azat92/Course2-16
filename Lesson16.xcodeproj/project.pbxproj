@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23AC98E41CA1DD9900D0C8E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23AC98E31CA1DD9900D0C8E2 /* ViewController.m */; };
+		23AC98E51CA1DE0400D0C8E2 /* StringHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AC98DF1CA1DD6A00D0C8E2 /* StringHelper.framework */; };
 		AA1F3D771C836A7D00393903 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D761C836A7D00393903 /* main.m */; };
 		AA1F3D7A1C836A7D00393903 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D791C836A7D00393903 /* AppDelegate.m */; };
 		AA1F3D7D1C836A7D00393903 /* ItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1F3D7C1C836A7D00393903 /* ItemsTableViewController.m */; };
@@ -14,10 +16,23 @@
 		AA1F3D821C836A7D00393903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1F3D811C836A7D00393903 /* Assets.xcassets */; };
 		AA1F3D851C836A7D00393903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1F3D831C836A7D00393903 /* LaunchScreen.storyboard */; };
 		AA1F3E551C83972400393903 /* Lesson16DataManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA1F3E4F1C8395B300393903 /* Lesson16DataManager.framework */; };
-		AA31E2161C8741D200CAF62A /* RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = AA31E2151C8741D200CAF62A /* RichText.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		23AC98DE1CA1DD6A00D0C8E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23AC98D91CA1DD6A00D0C8E2 /* StringHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 23FB2C351C93672D0007F5B0;
+			remoteInfo = StringHelper;
+		};
+		23AC98E01CA1DD6A00D0C8E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23AC98D91CA1DD6A00D0C8E2 /* StringHelper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 23FB2C3F1C93672D0007F5B0;
+			remoteInfo = StringHelperTests;
+		};
 		AA1F3E4E1C8395B300393903 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */;
@@ -48,6 +63,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		23AC98D91CA1DD6A00D0C8E2 /* StringHelper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StringHelper.xcodeproj; path = StringHelper/StringHelper.xcodeproj; sourceTree = "<group>"; };
+		23AC98E21CA1DD9900D0C8E2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		23AC98E31CA1DD9900D0C8E2 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AA1F3D721C836A7D00393903 /* Lesson16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA1F3D761C836A7D00393903 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA1F3D781C836A7D00393903 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,8 +77,6 @@
 		AA1F3D841C836A7D00393903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA1F3D861C836A7D00393903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lesson16DataManager.xcodeproj; path = Lesson16DataManager/Lesson16DataManager.xcodeproj; sourceTree = "<group>"; };
-		AA31E2141C8741D200CAF62A /* RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichText.h; sourceTree = "<group>"; };
-		AA31E2151C8741D200CAF62A /* RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RichText.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23AC98E51CA1DE0400D0C8E2 /* StringHelper.framework in Frameworks */,
 				AA1F3E551C83972400393903 /* Lesson16DataManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,9 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23AC98DA1CA1DD6A00D0C8E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23AC98DF1CA1DD6A00D0C8E2 /* StringHelper.framework */,
+				23AC98E11CA1DD6A00D0C8E2 /* StringHelperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		84E4E976104CAF561FA946E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23AC98D91CA1DD6A00D0C8E2 /* StringHelper.xcodeproj */,
 				AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */,
 			);
 			name = Frameworks;
@@ -107,13 +134,13 @@
 				AA1F3D791C836A7D00393903 /* AppDelegate.m */,
 				AA1F3D7B1C836A7D00393903 /* ItemsTableViewController.h */,
 				AA1F3D7C1C836A7D00393903 /* ItemsTableViewController.m */,
+				23AC98E21CA1DD9900D0C8E2 /* ViewController.h */,
+				23AC98E31CA1DD9900D0C8E2 /* ViewController.m */,
 				AA1F3D7E1C836A7D00393903 /* Main.storyboard */,
 				AA1F3D811C836A7D00393903 /* Assets.xcassets */,
 				AA1F3D831C836A7D00393903 /* LaunchScreen.storyboard */,
 				AA1F3D861C836A7D00393903 /* Info.plist */,
 				AA1F3D751C836A7D00393903 /* Supporting Files */,
-				AA31E2141C8741D200CAF62A /* RichText.h */,
-				AA31E2151C8741D200CAF62A /* RichText.m */,
 			);
 			path = Lesson16;
 			sourceTree = "<group>";
@@ -186,6 +213,10 @@
 					ProductGroup = AA1F3E4A1C8395B300393903 /* Products */;
 					ProjectRef = AA1F3E491C8395B300393903 /* Lesson16DataManager.xcodeproj */;
 				},
+				{
+					ProductGroup = 23AC98DA1CA1DD6A00D0C8E2 /* Products */;
+					ProjectRef = 23AC98D91CA1DD6A00D0C8E2 /* StringHelper.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -195,6 +226,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		23AC98DF1CA1DD6A00D0C8E2 /* StringHelper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = StringHelper.framework;
+			remoteRef = 23AC98DE1CA1DD6A00D0C8E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		23AC98E11CA1DD6A00D0C8E2 /* StringHelperTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = StringHelperTests.xctest;
+			remoteRef = 23AC98E01CA1DD6A00D0C8E2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		AA1F3E4F1C8395B300393903 /* Lesson16DataManager.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -222,9 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA31E2161C8741D200CAF62A /* RichText.m in Sources */,
 				AA1F3D7D1C836A7D00393903 /* ItemsTableViewController.m in Sources */,
 				AA1F3D7A1C836A7D00393903 /* AppDelegate.m in Sources */,
+				23AC98E41CA1DD9900D0C8E2 /* ViewController.m in Sources */,
 				AA1F3D771C836A7D00393903 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +398,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Lesson16DataManager.framework/Headers";
 				INFOPLIST_FILE = Lesson16/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.azatalmeev.Lesson16;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,6 +415,7 @@
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/Lesson16DataManager.framework/Headers";
 				INFOPLIST_FILE = Lesson16/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.azatalmeev.Lesson16;
 				PRODUCT_NAME = "$(TARGET_NAME)";
